@@ -1,0 +1,114 @@
+*{
+    margin: 0PX;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.border{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 82, 0, 0.5);
+    border: 15px solid transparent;
+    border-image: url('../images/border.png')  20 round;
+    margin: 100px;
+}
+
+.border-radius{
+    width: 300px;
+    height: 300px;
+    background-color: #ff0;
+    border-radius: 20px 50px 100px 150px;
+    opacity: 0.8;
+    margin: 100px;
+
+}
+
+.border-box{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(94, 17, 219);
+    margin: 100px;
+    box-shadow: 20px 10px 20px rgb(177, 11, 11);
+}
+
+h2{
+    text-shadow: 2px 1px #ff0;
+    margin: 100px;
+}
+
+.gradiant{
+    width: 300px;
+    height: 300px;
+    /* background: linear-gradient( 45deg, red, blue); */
+    background: radial-gradient(circle, red, blue, green);
+    margin: 100px;
+    transition: 2s, easy;
+    transform: rotate(20deg);
+}
+
+.gradiant:hover{
+    width: 400px;
+    height: 400px;
+}
+
+.parent{
+    position: relative;
+}
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(90, 16, 230);
+    animation-name: test;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    position: absolute;
+    animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+  
+}
+
+/* @keyframes test{
+        to{background-color: #f00;}
+        from{background-color: #ff0;}
+} */
+
+
+@keyframes test{
+    0%{background-color: #f00; top: 0px; left: 0px;}
+    25%{background-color: rgb(80, 163, 218); top: 0px; left: 500px;}
+    50%{background-color: rgb(148, 197, 14); top: 500px; left: 500px;}
+    75%{background-color: rgb(3, 148, 76); top: 500px; left: 0px;}
+    100%{background-color: rgb(35, 16, 146); top: 0px; left: 0px;}
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container .item{
+    height: 400px;
+    background-color: #f00;
+    margin: 10px;
+}
+
+.container .item1{
+    flex-grow: 1;
+}
+.container .item2{
+    flex-grow: 1;
+}
+.container .item3{
+    flex-grow: 8;
+}
+.container .item4{
+    flex-grow: 2;
+}
