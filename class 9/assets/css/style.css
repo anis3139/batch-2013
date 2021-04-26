@@ -1,0 +1,28 @@
+*{
+    margin: 0PX;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Blog section css */
+
+.blog-section{
+    
+}
+.blog-section .blog{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.blog-section .blog .blog-item{
+    width: 400px;
+    margin: 0px 20px;
+    padding: 20px;
+    
+}
+.blog-section .blog .blog-item h1{}
+.blog-section .blog .blog-item img{
+    width: 400px;
+}
+.blog-section .blog .blog-item article{}
